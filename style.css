@@ -1,0 +1,325 @@
+/* CSS BY NAME: */
+/* Kanishka Chhugani - Path to Success */
+
+/* IMPORTED FONTS */
+@import
+url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;1,400&family=Kavoon&display=swap');
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Kavoon', cursive;
+
+    --color-teal: #4CA7C0;
+    --color-purple: #484FB7;
+    --color-lavender: #6B8FE7;
+    --color-yellow: #E9BB57;
+    --color-pink: #D9526F;
+    --color-dark: #1E1E1E;
+    --color-white: #FFFFFF;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--color-lavender); /* Lavender background for mobile */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: var(--color-purple); /* Purple background for main content */
+    max-width: 450px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-box {
+    background-color: var(--color-purple);
+    padding: 0;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: var(--color-white);
+}
+
+/* HEADINGS */
+h1, h2 {
+    font-family: var(--font-heading);
+    color: var(--color-white);
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 0.1em;
+}
+
+.subtitle {
+    margin-top: 0; /* Remove negative margin */
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+nav h2,
+h3 {
+    font-family: var(--font-body);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--color-yellow);
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: var(--color-purple);
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+/* PARAGRAPH & LISTS */
+p, li {
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+a {
+    color: var(--color-purple);
+    text-decoration: underline;
+}
+
+/* NAVIGATION STYLES */
+nav {
+    background-color: var(--color-yellow);
+    border-radius: 0;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+nav h2 {
+    color: var(--color-dark);
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+nav a {
+    background-color: var(--color-white);
+    color: var(--color-purple);
+    display: block;
+    padding: 10px;
+    border-radius: 0;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #eee;
+}
+
+/* HEADER & FOOTER */
+header, footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    font-size: 14px;
+    margin-top: 40px;
+    color: var(--color-white);
+}
+
+/* ARTICLE / CARD STYLES */
+article {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    padding: 1.5em;
+    border-radius: 12px;
+    margin-bottom: 1.5em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ICON PLACEHOLDER */
+.icon {
+    width: 48px;
+    height: 48px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* ===== UPDATED TABLE STYLES (NO ROUNDED CORNERS) ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0 2em;
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Keep shadow but remove border-radius */
+}
+
+th, td {
+    border: 1px solid var(--color-yellow);
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--color-yellow);
+    color: var(--color-dark);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+/* Compact table width */
+#pricing table {
+    width: auto;
+    min-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== UPDATED CTA SECTION ===== */
+#step {
+    background-color: var(--color-pink);
+    padding: 1.5em;
+    color: var(--color-white);
+    text-align: left; /* Left-align text */
+    margin: 20px -20px; /* Negative margin to stretch full width */
+}
+
+#step h2 {
+    text-align: left; /* Left-align heading */
+    font-family: var(--font-heading);
+    margin-bottom: 0.8em;
+    font-size: 1.8em; /* Slightly smaller than other h2 */
+    line-height: 1.2;
+}
+
+#step p:first-of-type {
+    margin-bottom: 1.5em; /* Space before button */
+    text-align: left; /* Left-align paragraph */
+}
+
+#step a {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    padding: 18px 0; /* Taller button */
+    border-radius: 8px;
+    display: block; /* Full width */
+    font-weight: bold;
+    text-decoration: none;
+    margin: 1.5em auto 0; /* Space above, centered */
+    width: 90%; /* Almost full width */
+    max-width: 350px; /* But not too wide */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.1em; /* Slightly larger text */
+    letter-spacing: 0.5px; /* Better spacing */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#step a:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Why Choose Us Section - Fixed */
+.why-choose-us {
+    background-color: var(--color-pink);
+    padding: 2rem 1rem;
+    margin: 0 -20px; /* Negative margin to compensate for main's padding */
+    box-sizing: border-box;
+    color: var(--color-white);
+}
+
+.features-grid { /* Make sure this matches your HTML class */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+    max-width: 450px; /* Match your main content width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature { /* Changed from .feauture-box to .feature to match HTML */
+    padding: 1.5rem 1rem;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--color-dark);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Color classes - keep these the same */
+.teal {
+    background-color: var(--color-teal);
+}
+
+.lavender {
+    background-color: var(--color-lavender);
+}
+
+.yellow {
+    background-color: var(--color-yellow);
+}
+
+.white {
+    background-color: var(--color-white);
+}
