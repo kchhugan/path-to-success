@@ -31,7 +31,7 @@ body {
     font-family: var(--font-body);
     font-size: 16px;
     line-height: 1.6;
-    background-color: var(--color-lavender); /* Lavender background for mobile */
+    background-color: var(--color-lavender); 
     padding: 0;
     margin: 0;
     display: flex;
@@ -39,7 +39,7 @@ body {
 }
 
 main {
-    background-color: var(--color-purple); /* Purple background for main content */
+    background-color: var(--color-purple);
     max-width: 450px;
     width: 100%;
     padding: 20px;
@@ -77,7 +77,7 @@ h1 {
 }
 
 .subtitle {
-    margin-top: 0; /* Remove negative margin */
+    margin-top: 0; 
 }
 
 h2 {
@@ -198,14 +198,14 @@ article {
     margin-bottom: 10px;
 }
 
-/* ===== UPDATED TABLE STYLES (NO ROUNDED CORNERS) ===== */
+/* TABLE STYLES */
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 1em 0 2em;
     background-color: var(--color-white);
     color: var(--color-dark);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Keep shadow but remove border-radius */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
@@ -230,70 +230,70 @@ th {
     margin-right: auto;
 }
 
-/* ===== UPDATED CTA SECTION ===== */
+/* CTA SECTION */
 #step {
     background-color: var(--color-pink);
     padding: 1.5em;
     color: var(--color-white);
-    text-align: left; /* Left-align text */
-    margin: 20px -20px; /* Negative margin to stretch full width */
+    text-align: left; 
+    margin: 20px -20px; 
 }
 
 #step h2 {
-    text-align: left; /* Left-align heading */
+    text-align: left; 
     font-family: var(--font-heading);
     margin-bottom: 0.8em;
-    font-size: 1.8em; /* Slightly smaller than other h2 */
+    font-size: 1.8em; 
     line-height: 1.2;
 }
 
 #step p:first-of-type {
-    margin-bottom: 1.5em; /* Space before button */
-    text-align: left; /* Left-align paragraph */
+    margin-bottom: 1.5em; 
+    text-align: left; 
 }
 
 #step a {
     background-color: var(--color-white);
     color: var(--color-dark);
-    padding: 18px 0; /* Taller button */
+    padding: 18px 0; 
     border-radius: 8px;
-    display: block; /* Full width */
+    display: block; 
     font-weight: bold;
     text-decoration: none;
-    margin: 1.5em auto 0; /* Space above, centered */
-    width: 90%; /* Almost full width */
-    max-width: 350px; /* But not too wide */
+    margin: 1.5em auto 0; 
+    width: 90%; 
+    max-width: 350px; 
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-size: 1.1em; /* Slightly larger text */
-    letter-spacing: 0.5px; /* Better spacing */
+    font-size: 1.1em; 
+    letter-spacing: 0.5px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 #step a:hover {
-    transform: translateY(-2px); /* Lift effect on hover */
+    transform: translateY(-2px); 
 }
 
-/* Why Choose Us Section - Fixed */
+/* Why Choose Us Section */
 .why-choose-us {
     background-color: var(--color-pink);
     padding: 2rem 1rem;
-    margin: 0 -20px; /* Negative margin to compensate for main's padding */
+    margin: 0 -20px; 
     box-sizing: border-box;
     color: var(--color-white);
 }
 
-.features-grid { /* Make sure this matches your HTML class */
+.features-grid { 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin-top: 1.5rem;
-    max-width: 450px; /* Match your main content width */
+    max-width: 450px; 
     margin-left: auto;
     margin-right: auto;
 }
 
-.feature { /* Changed from .feauture-box to .feature to match HTML */
+.feature { 
     padding: 1.5rem 1rem;
     border-radius: 15px;
     font-weight: bold;
@@ -307,7 +307,7 @@ th {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Color classes - keep these the same */
+/* Color classes */
 .teal {
     background-color: var(--color-teal);
 }
